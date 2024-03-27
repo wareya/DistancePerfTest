@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cined1gg541c"]
+
+[ext_resource type="Script" path="res://Player2_distcheck.gd" id="1_kp468"]
+[ext_resource type="Texture2D" uid="uid://ctth2r0fsr44j" path="res://icon.svg" id="2_nv3nu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player2" type="Area2D" parent="."]
+z_index = 1
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("1_kp468")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player2"]
+texture = ExtResource("2_nv3nu")
+
+[node name="Label" type="Label" parent="Player2"]
+z_index = 1
+offset_left = -47.0
+offset_top = 33.0
+offset_right = -7.0
+offset_bottom = 56.0
+scale = Vector2(2, 2)
+
+[node name="Camera2D" type="Camera2D" parent="Player2"]
+zoom = Vector2(0.5, 0.5)
