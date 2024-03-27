@@ -4,11 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://ctth2r0fsr44j" path="res://icon.svg" id="1_y6lk2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_avnk0"]
+radius = 0.01
 
 [node name="Enemy" type="Area2D" groups=["Enemy"]]
 position = Vector2(165, 42)
 collision_layer = 16
 collision_mask = 2
+input_pickable = false
+monitoring = false
 script = ExtResource("1_54snm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
